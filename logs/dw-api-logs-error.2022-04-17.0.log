@@ -1,8 +1,0 @@
-2022-04-17 21:06:00.347 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
-2022-04-17 22:05:06.874 [http-nio-9999-exec-8] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 3546259 
-2022-04-17 22:09:45.227 [http-nio-9999-exec-9] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 278345 
-2022-04-17 22:30:31.692 [http-nio-9999-exec-3] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 1246451 
-2022-04-17 22:36:17.457 [http-nio-9999-exec-7] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 236512 
-2022-04-17 22:41:14.866 [http-nio-9999-exec-2] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 297404 
-2022-04-17 22:43:16.044 [http-nio-9999-exec-6] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 79513 
-2022-04-17 23:36:03.008 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
