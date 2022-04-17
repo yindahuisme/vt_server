@@ -1,0 +1,757 @@
+2022-04-02 15:17:31.644 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 12564 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 15:17:31.646 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 15:17:33.326 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 15:17:33.333 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:17:33.334 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 15:17:33.334 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 15:17:33.390 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 15:17:33.390 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1715 ms 
+2022-04-02 15:17:33.407 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:17:33.408 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:17:33.408 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:17:33.520 [main] INFO  o.s.m.config.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 15:17:33.522 [main] INFO  o.s.m.config.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 15:17:33.602 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 15:17:33.732 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请配置magic-api.cluster-config.enable=true，若开启后本提示还在，请检查 spring-boot-starter-data-redis 是否引入 
+2022-04-02 15:17:33.762 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10) 
+2022-04-02 15:17:33.764 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 15:17:33.797 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 15:17:33.955 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 15:17:33.960 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 15:17:33.960 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.EnvModule 
+2022-04-02 15:17:33.961 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.RequestModule 
+2022-04-02 15:17:33.961 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.ResponseModule 
+2022-04-02 15:17:33.961 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:assert -> class org.ssssssss.magicapi.modules.AssertModule 
+2022-04-02 15:17:33.962 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.HttpModule 
+2022-04-02 15:17:33.962 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.provider.impl.DefaultMagicAPIService 
+2022-04-02 15:17:33.962 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.SQLModule 
+2022-04-02 15:17:33.962 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 15:17:34.045 [main] INFO  o.s.m.config.MappingHandlerMapping - 注册接口:test,GET:/test/test1 
+2022-04-02 15:17:34.056 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:17:34.068 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 15:17:34.075 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.691 seconds (JVM running for 3.609) 
+2022-04-02 15:17:43.203 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 15:17:43.203 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 15:17:43.204 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 15:17:53.762 [http-nio-9999-exec-4] INFO  o.s.m.config.MappingHandlerMapping - 刷新接口:test,GET:/test/test1 
+2022-04-02 15:17:53.807 [http-nio-9999-exec-7] INFO  /test/test(/test/test1) - 执行SQL：show tables 
+2022-04-02 15:55:06.879 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 8076 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 15:55:06.881 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 15:55:08.593 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 15:55:08.599 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:55:08.600 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 15:55:08.600 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 15:55:08.659 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 15:55:08.659 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1743 ms 
+2022-04-02 15:55:08.677 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:55:08.677 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:55:08.678 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:55:08.755 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'magicApiDynamicDataSource': Unsatisfied dependency expressed through field 'mysqlDataSource'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mysqlDataSource': Could not bind properties to 'DataSource' : prefix=spring.dataSource.mysql, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'spring.dataSource.mysql' is not valid 
+2022-04-02 15:55:08.757 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-04-02 15:55:08.771 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-02 15:55:08.783 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'spring.dataSource.mysql' is not valid:
+
+    Invalid characters: 'S'
+    Bean: magicApiDynamicDataSource
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'spring.dataSource.mysql' so that it conforms to the canonical names requirements.
+ 
+2022-04-02 15:57:17.985 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 5392 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 15:57:17.987 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 15:57:19.671 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 15:57:19.677 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:57:19.677 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 15:57:19.677 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 15:57:19.732 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 15:57:19.733 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1715 ms 
+2022-04-02 15:57:19.749 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:57:19.749 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:57:19.750 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:57:19.828 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'magicApiDynamicDataSource': Unsatisfied dependency expressed through field 'mysqlDataSource'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mysqlDataSource': Could not bind properties to 'DataSource' : prefix=spring.dataSource.mysql, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'spring.dataSource.mysql' is not valid 
+2022-04-02 15:57:19.830 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-04-02 15:57:19.842 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-02 15:57:19.855 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'spring.dataSource.mysql' is not valid:
+
+    Invalid characters: 'S'
+    Bean: magicApiDynamicDataSource
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'spring.dataSource.mysql' so that it conforms to the canonical names requirements.
+ 
+2022-04-02 15:58:56.281 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 7964 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 15:58:56.283 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 15:58:58.001 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 15:58:58.007 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:58:58.007 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 15:58:58.007 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 15:58:58.065 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 15:58:58.065 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1752 ms 
+2022-04-02 15:58:58.082 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:58:58.083 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:58:58.084 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:58:58.162 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'magicApiDynamicDataSource': Unsatisfied dependency expressed through field 'mysqlDataSource'; nested exception is org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'mysqlDataSource': Could not bind properties to 'DataSource' : prefix=spring.dataSource.mysql, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'spring.dataSource.mysql' is not valid 
+2022-04-02 15:58:58.164 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-04-02 15:58:58.176 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-02 15:58:58.189 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Configuration property name 'spring.dataSource.mysql' is not valid:
+
+    Invalid characters: 'S'
+    Bean: magicApiDynamicDataSource
+    Reason: Canonical names should be kebab-case ('-' separated), lowercase alpha-numeric characters and must start with a letter
+
+Action:
+
+Modify 'spring.dataSource.mysql' so that it conforms to the canonical names requirements.
+ 
+2022-04-02 15:59:29.756 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 3600 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 15:59:29.758 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 15:59:31.445 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 15:59:31.451 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:59:31.451 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 15:59:31.451 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 15:59:31.510 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 15:59:31.510 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1722 ms 
+2022-04-02 15:59:31.527 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:59:31.528 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:59:31.529 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 15:59:31.640 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 15:59:31.642 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 15:59:31.720 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 15:59:31.824 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 15:59:31.847 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 15:59:31.848 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 15:59:31.918 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 15:59:31.923 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 15:59:31.924 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 15:59:31.925 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 15:59:31.925 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 15:59:31.925 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 15:59:31.925 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 15:59:31.925 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 15:59:31.925 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 15:59:31.950 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 15:59:31.963 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 15:59:31.974 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 15:59:31.982 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.486 seconds (JVM running for 3.399) 
+2022-04-02 15:59:32.063 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 15:59:41.899 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 15:59:41.899 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 15:59:41.900 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms 
+2022-04-02 16:02:43.318 [http-nio-9999-exec-5] INFO  /test/test(/test/test1) - 执行SQL：show tables 
+2022-04-02 16:02:43.327 [http-nio-9999-exec-5] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 191158 
+2022-04-02 16:06:22.104 [http-nio-9999-exec-10] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 218773 
+2022-04-02 16:25:01.280 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 11904 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:25:01.283 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:25:03.004 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:25:03.010 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:25:03.010 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:25:03.011 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:25:03.068 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:25:03.069 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1757 ms 
+2022-04-02 16:25:03.090 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:25:03.091 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:25:03.092 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:25:03.204 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:25:03.206 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:25:03.286 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:25:03.393 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:25:03.414 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:25:03.415 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:25:03.485 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:25:03.489 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:25:03.491 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:25:03.492 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:25:03.492 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:25:03.492 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:25:03.492 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:25:03.492 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:25:03.493 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:25:03.517 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:25:03.529 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:25:03.541 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:25:03.549 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.53 seconds (JVM running for 3.379) 
+2022-04-02 16:25:03.577 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:25:04.836 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 16:25:04.837 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 16:25:04.838 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 16:26:49.373 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 12628 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:26:49.375 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:26:51.139 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:26:51.146 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:26:51.147 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:26:51.147 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:26:51.205 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:26:51.205 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1800 ms 
+2022-04-02 16:26:51.229 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:26:51.230 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:26:51.231 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:26:51.343 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:26:51.345 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:26:51.426 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:26:51.535 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:26:51.558 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:26:51.559 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:26:51.635 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:26:51.639 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:26:51.641 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:26:51.641 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:26:51.641 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:26:51.641 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:26:51.641 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:26:51.641 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:26:51.642 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:26:51.666 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:26:51.679 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:26:51.691 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:26:51.699 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.587 seconds (JVM running for 3.474) 
+2022-04-02 16:26:51.775 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:26:59.892 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 16:26:59.893 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 16:26:59.894 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 16:27:09.469 [http-nio-9999-exec-7] INFO  /test/test(/test/test1) - 执行SQL：show tables 
+2022-04-02 16:33:36.223 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 11788 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:33:36.225 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:33:37.920 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:33:37.926 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:33:37.926 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:33:37.926 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:33:37.982 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:33:37.983 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1727 ms 
+2022-04-02 16:33:38.005 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:33:38.006 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:33:38.006 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:33:38.116 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:33:38.118 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:33:38.198 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:33:38.307 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:33:38.329 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:33:38.330 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:33:38.399 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:33:38.403 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:33:38.405 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:33:38.405 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:33:38.405 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:33:38.405 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:33:38.405 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:33:38.405 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:33:38.406 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:33:38.429 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:33:38.443 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:33:38.456 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:33:38.464 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.503 seconds (JVM running for 3.399) 
+2022-04-02 16:33:38.541 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:33:39.378 [http-nio-9999-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 16:33:39.379 [http-nio-9999-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 16:33:39.379 [http-nio-9999-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms 
+2022-04-02 16:37:35.386 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 4860 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:37:35.389 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:37:37.103 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:37:37.110 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:37:37.110 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:37:37.111 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:37:37.167 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:37:37.167 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1745 ms 
+2022-04-02 16:37:37.188 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:37:37.188 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:37:37.189 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:37:37.305 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:37:37.307 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:37:37.390 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:37:37.498 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:37:37.520 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:37:37.521 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:37:37.592 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:37:37.596 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:37:37.597 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:37:37.598 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:37:37.598 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:37:37.598 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:37:37.598 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:37:37.598 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:37:37.599 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:37:37.622 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:37:37.635 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:37:37.647 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:37:37.655 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.538 seconds (JVM running for 3.48) 
+2022-04-02 16:37:37.728 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:37:44.305 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 16:37:44.305 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 16:37:44.306 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 16:38:15.309 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 7424 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:38:15.312 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:38:17.011 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:38:17.017 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:38:17.018 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:38:17.018 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:38:17.076 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:38:17.077 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1734 ms 
+2022-04-02 16:38:17.098 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:38:17.099 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:38:17.099 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:38:17.209 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:38:17.211 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:38:17.294 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:38:17.403 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:38:17.426 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:38:17.427 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:38:17.498 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:38:17.503 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:38:17.505 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:38:17.505 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:38:17.505 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:38:17.505 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:38:17.505 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:38:17.505 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:38:17.506 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:38:17.529 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:38:17.541 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:38:17.553 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:38:17.561 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.514 seconds (JVM running for 3.423) 
+2022-04-02 16:38:17.637 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:44:55.643 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 9268 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:44:55.646 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:44:57.316 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:44:57.322 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:44:57.322 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:44:57.322 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:44:57.377 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:44:57.377 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1701 ms 
+2022-04-02 16:44:57.384 [main] INFO  com.beans.MagicApiDruidDataSource - 当前用户名：vt.druid.userName,密码：vt.druid.passWord 
+2022-04-02 16:44:57.398 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:44:57.399 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:44:57.399 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:44:57.513 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:44:57.515 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:44:57.597 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:44:57.704 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:44:57.726 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:44:57.727 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:44:57.798 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:44:57.802 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:44:57.803 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:44:57.803 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:44:57.804 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:44:57.804 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:44:57.804 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:44:57.804 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:44:57.804 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:44:57.827 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:44:57.840 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:44:57.853 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:44:57.861 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.476 seconds (JVM running for 3.355) 
+2022-04-02 16:44:57.936 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:46:24.739 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 8492 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 16:46:24.741 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 16:46:26.438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 16:46:26.443 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:46:26.444 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 16:46:26.444 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 16:46:26.501 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 16:46:26.501 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1728 ms 
+2022-04-02 16:46:26.508 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 16:46:26.525 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:46:26.525 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:46:26.526 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 16:46:26.633 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 16:46:26.635 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 16:46:26.715 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 16:46:26.823 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 16:46:26.844 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 16:46:26.844 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 16:46:26.916 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 16:46:26.921 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 16:46:26.923 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 16:46:26.923 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 16:46:26.923 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 16:46:26.923 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 16:46:26.924 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 16:46:26.924 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 16:46:26.924 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 16:46:26.949 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 16:46:26.964 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 16:46:26.977 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 16:46:26.986 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.516 seconds (JVM running for 3.384) 
+2022-04-02 16:46:27.067 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2022-04-02 16:52:52.364 [http-nio-9999-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 16:52:52.365 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 16:52:52.366 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 16:52:55.805 [http-nio-9999-exec-5] INFO  /test/test(/test/test1) - 执行SQL：show tables 
+2022-04-02 16:52:55.815 [http-nio-9999-exec-5] WARN  c.a.d.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://127.0.0.1:3306/vt, version : 1.2.8, lastPacketReceivedIdleMillis : 388639 
+2022-04-02 16:53:19.903 [http-nio-9999-exec-6] INFO  /test/test(/test/test1) - 执行SQL：select * from vt.magic_api_file 
+2022-04-02 17:03:31.938 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 8584 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 17:03:31.940 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 17:03:33.655 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 17:03:33.661 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 17:03:33.662 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 17:03:33.662 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 17:03:33.721 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 17:03:33.721 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1750 ms 
+2022-04-02 17:03:33.728 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 17:03:33.744 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 17:03:33.745 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 17:03:33.745 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 17:03:33.866 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 17:03:33.867 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 17:03:33.948 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 17:03:34.054 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 17:03:34.075 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 17:03:34.076 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 17:03:34.146 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 17:03:34.151 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 17:03:34.152 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 17:03:34.152 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 17:03:34.153 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 17:03:34.153 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 17:03:34.153 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 17:03:34.153 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 17:03:34.154 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 17:03:34.177 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 17:03:34.190 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 17:03:34.202 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 17:03:34.211 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.538 seconds (JVM running for 3.433) 
+2022-04-02 17:03:34.280 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 17:03:36.798 [http-nio-9999-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 17:03:36.798 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 17:03:36.799 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 17:59:54.173 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 11796 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 17:59:54.175 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 17:59:55.895 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 17:59:55.901 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 17:59:55.902 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 17:59:55.902 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 17:59:55.959 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 17:59:55.959 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1754 ms 
+2022-04-02 17:59:55.966 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 17:59:55.981 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 17:59:55.981 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 17:59:55.982 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 17:59:56.060 [main] ERROR c.a.druid.filter.FilterManager - load filter error, filter not found : wall.log4j 
+2022-04-02 17:59:56.100 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 17:59:56.102 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 17:59:56.184 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 17:59:56.291 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 17:59:56.311 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 17:59:56.312 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 17:59:56.385 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 17:59:56.388 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 17:59:56.390 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 17:59:56.390 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 17:59:56.390 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 17:59:56.390 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 17:59:56.391 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 17:59:56.391 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 17:59:56.391 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 17:59:56.414 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 17:59:56.427 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 17:59:56.438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 17:59:56.448 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.535 seconds (JVM running for 3.429) 
+2022-04-02 17:59:56.586 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 17:59:56.840 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 17:59:56.840 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 17:59:56.841 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 18:02:01.681 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 2548 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 18:02:01.683 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 18:02:03.332 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 18:02:03.338 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:02:03.339 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 18:02:03.339 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 18:02:03.395 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 18:02:03.395 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1683 ms 
+2022-04-02 18:02:03.401 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 18:02:03.417 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:02:03.418 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:02:03.418 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:02:03.497 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'magicApiDynamicDataSource': Unsatisfied dependency expressed through field 'mysqlDataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlDataSource' defined in class path resource [com/beans/MagicApiDataSources.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'mysqlDataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/log4j/Logger 
+2022-04-02 18:02:03.499 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat] 
+2022-04-02 18:02:03.512 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-02 18:02:03.528 [main] ERROR o.s.boot.SpringApplication - Application run failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'magicApiDynamicDataSource': Unsatisfied dependency expressed through field 'mysqlDataSource'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlDataSource' defined in class path resource [com/beans/MagicApiDataSources.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'mysqlDataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/log4j/Logger
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:782)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:774)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1340)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329)
+	at com.yindahu.MagicApiApplication.main(MagicApiApplication.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mysqlDataSource' defined in class path resource [com/beans/MagicApiDataSources.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'mysqlDataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/log4j/Logger
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'mysqlDataSource' threw exception; nested exception is java.lang.NoClassDefFoundError: org/apache/log4j/Logger
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 34 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/apache/log4j/Logger
+	at com.alibaba.druid.filter.logging.Log4jFilter.<init>(Log4jFilter.java:26)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at com.alibaba.druid.filter.FilterManager.loadFilter(FilterManager.java:124)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.addFilters(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.setFilters(DruidAbstractDataSource.java:1366)
+	at com.beans.MagicApiDataSources.mysqlDataSource(MagicApiDataSources.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 35 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.Logger
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 50 common frames omitted
+2022-04-02 18:02:21.188 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 10504 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 18:02:21.191 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 18:02:22.939 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 18:02:22.945 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:02:22.945 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 18:02:22.945 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 18:02:23.005 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 18:02:23.005 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms 
+2022-04-02 18:02:23.011 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 18:02:23.026 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:02:23.026 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:02:23.027 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:02:23.147 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 18:02:23.149 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 18:02:23.233 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 18:02:23.339 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 18:02:23.360 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 18:02:23.361 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 18:02:23.436 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 18:02:23.440 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 18:02:23.441 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 18:02:23.441 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 18:02:23.441 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 18:02:23.441 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 18:02:23.442 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 18:02:23.442 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 18:02:23.442 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 18:02:23.465 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 18:02:23.480 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:02:23.492 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 18:02:23.500 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.607 seconds (JVM running for 3.451) 
+2022-04-02 18:02:23.658 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 18:02:23.846 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 18:02:23.846 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 18:02:23.846 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms 
+2022-04-02 18:03:04.906 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 8116 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 18:03:04.908 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 18:03:06.614 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 18:03:06.621 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:03:06.621 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 18:03:06.621 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 18:03:06.678 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 18:03:06.679 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms 
+2022-04-02 18:03:06.685 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 18:03:06.700 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:03:06.701 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:03:06.701 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:03:06.823 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 18:03:06.825 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 18:03:06.907 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 18:03:07.018 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 18:03:07.040 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 18:03:07.041 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 18:03:07.113 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 18:03:07.117 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 18:03:07.119 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 18:03:07.119 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 18:03:07.119 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 18:03:07.119 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 18:03:07.119 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 18:03:07.120 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 18:03:07.120 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 18:03:07.141 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 18:03:07.155 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:03:07.167 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 18:03:07.227 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.591 seconds (JVM running for 3.438) 
+2022-04-02 18:03:07.327 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 18:03:12.807 [http-nio-9999-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 18:03:12.807 [http-nio-9999-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 18:03:12.808 [http-nio-9999-exec-5] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 18:04:32.673 [http-nio-9999-exec-10] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level. 
+java.lang.IllegalArgumentException: Invalid character found in the request target [/druid/sql.json?orderBy=Histogram[2]&orderType=desc&page=1&perPageCount=1000000&]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:490)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:261)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-04-02 18:05:47.732 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 10996 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 18:05:47.735 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 18:05:49.433 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 18:05:49.440 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:05:49.440 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 18:05:49.440 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 18:05:49.496 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 18:05:49.496 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1729 ms 
+2022-04-02 18:05:49.503 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 18:05:49.519 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:05:49.519 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:05:49.520 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:05:49.639 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 18:05:49.641 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 18:05:49.721 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 18:05:49.829 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 18:05:49.851 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 18:05:49.852 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 18:05:49.923 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 18:05:49.927 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 18:05:49.928 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 18:05:49.928 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 18:05:49.928 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 18:05:49.929 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 18:05:49.929 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 18:05:49.929 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 18:05:49.929 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 18:05:49.951 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 18:05:49.965 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:05:49.977 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 18:05:50.031 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.562 seconds (JVM running for 3.425) 
+2022-04-02 18:05:50.132 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 18:05:51.839 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 18:05:51.839 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 18:05:51.840 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms 
+2022-04-02 18:06:27.637 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 9256 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 18:06:27.639 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 18:06:29.287 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 18:06:29.293 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:06:29.294 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 18:06:29.294 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 18:06:29.349 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 18:06:29.349 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1680 ms 
+2022-04-02 18:06:29.355 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 18:06:29.372 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:06:29.372 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:06:29.373 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:06:29.483 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 18:06:29.484 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 18:06:29.565 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 18:06:29.673 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 18:06:29.694 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 18:06:29.694 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 18:06:29.766 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 18:06:29.770 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 18:06:29.772 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 18:06:29.772 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 18:06:29.772 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 18:06:29.772 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 18:06:29.772 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 18:06:29.772 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 18:06:29.773 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 18:06:29.795 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 18:06:29.808 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:06:29.820 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 18:06:29.828 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.444 seconds (JVM running for 3.294) 
+2022-04-02 18:06:29.966 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 18:06:30.846 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 18:06:30.847 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 18:06:30.847 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms 
+2022-04-02 18:07:29.218 [main] INFO  com.yindahu.MagicApiApplication - Starting MagicApiApplication using Java 1.8.0_181 on yindahu with PID 1308 (C:\Users\Administrator\Desktop\pr_plugin\vt_api\target\classes started by Administrator in C:\Users\Administrator\Desktop\pr_plugin\vt_api) 
+2022-04-02 18:07:29.220 [main] INFO  com.yindahu.MagicApiApplication - No active profile set, falling back to default profiles: default 
+2022-04-02 18:07:30.877 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9999 (http) 
+2022-04-02 18:07:30.884 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:07:30.885 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2022-04-02 18:07:30.885 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45] 
+2022-04-02 18:07:30.942 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2022-04-02 18:07:30.942 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1692 ms 
+2022-04-02 18:07:30.949 [main] INFO  com.beans.MagicApiDruidDataSource - 注册druid监控servlet 
+2022-04-02 18:07:30.964 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final org.springframework.web.servlet.HandlerExecutionChain org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(javax.servlet.http.HttpServletRequest) throws java.lang.Exception] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:07:30.964 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.web.context.support.WebApplicationObjectSupport.setServletContext(javax.servlet.ServletContext)] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:07:30.965 [main] INFO  o.s.aop.framework.CglibAopProxy - Unable to proxy interface-implementing method [public final void org.springframework.context.support.ApplicationObjectSupport.setApplicationContext(org.springframework.context.ApplicationContext) throws org.springframework.beans.BeansException] because it is marked as final: Consider using interface-based JDK proxies instead! 
+2022-04-02 18:07:31.083 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：default 
+2022-04-02 18:07:31.085 [main] INFO  o.s.m.d.m.MagicDynamicDataSource - 注册数据源：mysql 
+2022-04-02 18:07:31.165 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2022-04-02 18:07:31.271 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 未配置集群通知服务，本实例不会推送通知，集群环境下可能会有问题，如需开启，请引用magic-api-plugin-cluster插件 
+2022-04-02 18:07:31.294 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到分页实现,采用默认分页实现,分页配置:(页码=page,页大小=size,默认首页=1,默认页大小=10,最大页大小=-1) 
+2022-04-02 18:07:31.295 [main] INFO  o.s.m.s.b.s.MagicModuleConfiguration - 未找到SQL缓存实现，采用默认缓存实现(LRU+TTL)，缓存配置:(容量=10000,TTL=-1) 
+2022-04-02 18:07:31.364 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - magic-api工作目录:db://magic_api_file//magic-api 
+2022-04-02 18:07:31.368 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:log -> interface org.slf4j.Logger 
+2022-04-02 18:07:31.370 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:db -> class org.ssssssss.magicapi.modules.db.SQLModule 
+2022-04-02 18:07:31.370 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:http -> class org.ssssssss.magicapi.modules.http.HttpModule 
+2022-04-02 18:07:31.370 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:env -> class org.ssssssss.magicapi.modules.spring.EnvModule 
+2022-04-02 18:07:31.370 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:request -> class org.ssssssss.magicapi.modules.servlet.RequestModule 
+2022-04-02 18:07:31.370 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:response -> class org.ssssssss.magicapi.modules.servlet.ResponseModule 
+2022-04-02 18:07:31.370 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 注册模块:magic -> class org.ssssssss.magicapi.core.service.impl.DefaultMagicAPIService 
+2022-04-02 18:07:31.371 [main] INFO  o.s.m.s.b.s.MagicAPIAutoConfiguration - 自动导入模块：db 
+2022-04-02 18:07:31.393 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
+2022-04-02 18:07:31.407 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9999"] 
+2022-04-02 18:07:31.419 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9999 (http) with context path '' 
+2022-04-02 18:07:31.427 [main] INFO  com.yindahu.MagicApiApplication - Started MagicApiApplication in 2.486 seconds (JVM running for 3.302) 
+2022-04-02 18:07:31.569 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,mysql} inited 
+2022-04-02 18:07:31.810 [http-nio-9999-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-02 18:07:31.810 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2022-04-02 18:07:31.811 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms 

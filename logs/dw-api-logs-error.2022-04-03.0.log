@@ -1,0 +1,1 @@
+2022-04-03 22:36:38.062 [main] ERROR o.s.m.s.b.s.MagicAPIAutoConfiguration - 当前备份设置未配置，强烈建议配置备份设置，以免代码丢失。 
