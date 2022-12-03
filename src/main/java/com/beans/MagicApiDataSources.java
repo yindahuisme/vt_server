@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class MagicApiDataSources {
 
     @Bean(name = "mysqlDataSource")
-    @ConfigurationProperties("spring.data-source.mysql")
+    @ConfigurationProperties(prefix="spring.data-source.mysql")
     public DataSource mysqlDataSource() throws SQLException {
         DruidDataSource mysqlDataSource =  new DruidDataSource();
         mysqlDataSource.setName("mysql");
@@ -21,7 +21,7 @@ public class MagicApiDataSources {
         mysqlDataSource.setMinIdle(1);
         mysqlDataSource.setMaxActive(3);
         mysqlDataSource.setPoolPreparedStatements(false);
-        mysqlDataSource.setValidationQuery("select * from vt.magic_api_file");
+        mysqlDataSource.setValidationQuery("select * from vt.magic_api_file limit 1");
         mysqlDataSource.setTestOnBorrow(true);
 
         return mysqlDataSource;
